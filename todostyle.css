@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    
+}
+
+.ramn {
+    border: .3rem solid red;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #62d6a0, #e9aa36);
+}
+
+.to-do h1 {
+    color: red;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 500%;
+    box-shadow: 0 2.0rem 7.0rem;
+    margin-right: 30%;
+    margin-left: 30%;
+
+}
+
+.row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1.0rem;
+    background: linear-gradient(135deg, #f0f5f3, #36e94e);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2.5rem;
+}
+
+.btn:hover {
+    background-color: rgb(233, 129, 129);
+
+}
+
+input {
+    flex: 1;
+    border: 1.0rem;
+    outline: none;
+    background: transparent;
+    font-size: 2.5rem;
+    margin-left: 3%
+}
+
+button {
+    box-shadow: 0 1.0rem 3.0rem;
+    background-color: rgb(168, 114, 234);
+    font-size: 4.0rem;
+    width: 10.0rem;
+    border-radius: 9.0rem;
+    color: white;
+
+}
+
+ul li {
+    list-style: none;
+    font-size: 3.0rem;
+    padding: 1.0rem 3.0rem;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-left: 18%;
+    color: rgb(3, 7, 8);
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-size: cover;
+    border-radius: 5.0rem;
+    background-image: url(./tick.png);
+    background-position: center;
+    top: 1.6rem;
+    left: .0rem;
+    
+
+}
+ul li.checked {
+    color: #ea5555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(./2tick.png);
+
+}
+ul li span {
+    position: absolute;
+    right: 25%;
+    top: 1.5rem;
+    width: 10.0rem;
+    height: 4.0rem;
+    font-size: 2.2rem;
+    color: #555;
+    line-height: center;
+    border-radius:3.0rem;
+    text-align: center;
+    color:rgb(237, 26, 26);
+    box-shadow:0 1.0rem 3.0rem;
+    /* align-items: center; */
+    padding-top: ..5rem;
+}
+
+UL li span:hover {
+    background: rgb(238, 235, 235);
+}
+html{
+    font-size: 62.5%;
+}
+@media{
+    html{
+        font-size: 55%;
+
+    }
+}
+@media{
+    html{
+        font-size: 45%;
+    }
+}
